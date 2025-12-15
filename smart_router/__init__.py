@@ -4,7 +4,7 @@ LLM Smart Router - Intelligent tool routing for Large Language Models
 Reduces 90+ tools to 3-8 relevant tools per query with 95.8% reduction.
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __author__ = "LLM Smart Router Contributors"
 __license__ = "MIT"
 
