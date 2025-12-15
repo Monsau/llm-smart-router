@@ -36,7 +36,7 @@ Feature requests are welcome! Please:
 
 ```bash
 # Clone your fork
-git clone https://github.com/yourusername/llm-smart-router.git
+git clone https://github.com/monsau/llm-smart-router.git
 cd llm-smart-router
 
 # Create virtual environment
@@ -90,7 +90,7 @@ pytest tests/test_registry.py::test_register_tool
 
 ## Questions?
 
-- Open a [Discussion](https://github.com/yourusername/llm-smart-router/discussions)
+- Open a [Discussion](https://github.com/monsau/llm-smart-router/discussions)
 - Join our [Discord](https://discord.gg/example) (if applicable)
 
 ## License
