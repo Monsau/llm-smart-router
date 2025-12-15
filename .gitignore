@@ -59,3 +59,9 @@ Thumbs.db
 *.log
 .env
 .env.local
+# Temporary fix scripts
+fix_*.py
+*_fix.py
+test_import.py
+comprehensive_*.py
+minimal_*.py
