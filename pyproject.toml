@@ -44,10 +44,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/llm-smart-router"
+Homepage = "https://github.com/monsau/llm-smart-router"
 Documentation = "https://llm-smart-router.readthedocs.io"
-Repository = "https://github.com/yourusername/llm-smart-router"
-Issues = "https://github.com/yourusername/llm-smart-router/issues"
+Repository = "https://github.com/monsau/llm-smart-router"
+Issues = "https://github.com/monsau/llm-smart-router/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]

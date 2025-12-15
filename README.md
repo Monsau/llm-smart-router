@@ -298,7 +298,7 @@ Contributions welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) first.
 
 ```bash
 # Clone repo
-git clone https://github.com/yourusername/llm-smart-router.git
+git clone https://github.com/monsau/llm-smart-router.git
 cd llm-smart-router
 
 # Create virtual environment
@@ -337,8 +337,8 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 - **Documentation**: https://llm-smart-router.readthedocs.io
 - **PyPI**: https://pypi.org/project/llm-smart-router
-- **Issues**: https://github.com/yourusername/llm-smart-router/issues
-- **Discussions**: https://github.com/yourusername/llm-smart-router/discussions
+- **Issues**: https://github.com/monsau/llm-smart-router/issues
+- **Discussions**: https://github.com/monsau/llm-smart-router/discussions
 
 ## 📊 Citation
 
@@ -349,7 +349,7 @@ If you use this in research, please cite:
   title = {LLM Smart Router: Intelligent Tool Routing for Large Language Models},
   author = {Your Name},
   year = {2025},
-  url = {https://github.com/yourusername/llm-smart-router}
+  url = {https://github.com/monsau/llm-smart-router}
 }
 ```
 
