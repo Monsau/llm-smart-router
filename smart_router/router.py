@@ -10,9 +10,11 @@ from typing import List, Dict, Optional, Any
 from datetime import datetime
 
 from langchain_openai import ChatOpenAI
-try:\n    from langchain_core.prompts import ChatPromptTemplate\nexcept ImportError:\n    from langchain.prompts import ChatPromptTemplate
-from langchain.output_parsers import PydanticOutputParser
-from langchain.chains import LLMChain
+try:
+    from langchain_core.prompts import ChatPromptTemplate
+except ImportError:
+    from langchain.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import PydanticOutputParser
 
 from .models import (
     AGDomain,
@@ -26,7 +28,7 @@ from .tool_registry import ToolRegistry
 logger = logging.getLogger(__name__)
 
 
-class RouterAgent:
+class SmartRouter:
     """
     Agent de routage intelligent pour la Stack AG Intelligence
     
@@ -70,12 +72,8 @@ class RouterAgent:
         # Prompt système pour le routeur
         self.routing_prompt = self._create_routing_prompt()
         
-        # Chaîne LangChain pour le routage
-        self.routing_chain = LLMChain(
-            llm=self.llm,
-            prompt=self.routing_prompt,
-            output_parser=self.output_parser
-        )
+        # Chaîne LangChain pour le routage (LCEL)
+        self.routing_chain = self.routing_prompt | self.llm | self.output_parser
         
         # Cache pour optimisation
         self._cache: Dict[str, RoutingDecision] = {}
@@ -187,10 +185,10 @@ Ta mission est de classifier chaque requête utilisateur et de sélectionner UNI
         
         try:
             # Exécuter le routage via LangChain
-            result = self.routing_chain.run(
-                query=query,
-                context=self._format_context(query_context)
-            )
+            result = self.routing_chain.invoke({
+                "query": query,
+                "context": self._format_context(query_context)
+            })
             
             # Parser le résultat
             if isinstance(result, str):

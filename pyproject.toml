@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "llm-smart-router"
-version = "0.1.1"
+version = "0.1.3"
 description = "Intelligent tool routing for LLMs with 95.8% reduction in context size"
 readme = "README.md"
 authors = [
