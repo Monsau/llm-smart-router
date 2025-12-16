@@ -335,7 +335,6 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## 🔗 Links
 
-- **Documentation**: https://llm-smart-router.readthedocs.io
 - **PyPI**: https://pypi.org/project/llm-smart-router
 - **Issues**: https://github.com/monsau/llm-smart-router/issues
 - **Discussions**: https://github.com/monsau/llm-smart-router/discussions
